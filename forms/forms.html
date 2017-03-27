@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Info</title>
+  </head>
+  <body>
+    <form action="index.html" method="post">
+      <fieldset>
+        <legend>Personal information</legend>
+        <input type="text" placeholder="First name" id="fn" required name="first name">
+        <input type="text" placeholder="Middle Name" id="mn" name="middle name">
+        <input type="text" placeholder="Last Name" id="ls" required name="last name">
+        <input type="file" placeholder="User Picture" id="up" required name="user photo">
+        <select id="g" name="gender">
+          <option value=""></option>
+          <option value="m">Male</option>
+          <option value="f">Female</option>
+        </select>
+        <input type="number" placeholder="number of sons" id="nos" required name="number of siblings" min="0" max="20">
+        <input type="date" placeholder="Date of birth" id="dob" required name="date of birth">
+        <textarea name="short bio" placeholder="Short bio" id="sb"></textarea>
+
+        <br>
+        <label for="fn">First Name</label>
+        <label for="mn">Middle Name</label>
+        <label for="ls">Last Name</label>
+        <label for="up">User Picture</label>
+        <label for="g">Genedr</label>
+        <label for="nos">No. of sons</label>
+        <label for="dob">Date of birth</label>
+        <label for="sb">Short bio</label>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Contact information</legend>
+        <input required placeholder="Phone number" id="mo"name="mob" type="tel">
+        <input required placeholder="Email" id="em"name="email" type="email">
+
+        <label for="mo">Phone number</label>
+        <label for="em">Email Address</label>
+        <fieldset>
+          <legend>Address</legend>
+          <input required placeholder="City" name="city" id="ci" type="text">
+          <input required placeholder="State" name="state" id="st" type="text">
+          <input required placeholder="Street" name="street" id="str" type="text">
+          <input required placeholder="Zip Code" name="zip" id="zip" type="number" maxlength="5">
+          <input required placeholder="Country" name="country" id="coun" type="text">
+
+          <label for="ci">City</label>
+          <label for="st">State</label>
+          <label for="str">Street</label>
+          <label for="zip">Zip code</label>
+          <label for="coun">Country</label>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>Additional information</legend>
+        <fieldset>
+          <legend>Hobbies</legend>
+          <input type="checkbox" name="tennis" id="ten">
+          <input type="checkbox" name="squash" id="squ">
+          <input type="checkbox" name="swimming" id="swi">
+          <input type="checkbox" name="football" id="foot">
+          <input type="checkbox" name="coding" id="cod">
+          <input type="checkbox" name="outing" id="out">
+          <input type="text" placeholder="Other" name="other" id="other" >
+
+          <label for="ten">Tennis</label>
+          <label for="squ">Squash</label>
+          <label for="swi">Swimming</label>
+          <label for="foot">Football</label>
+          <label for="cod">Coding</label>
+          <label for="out">Outing</label>
+          <label for="other">Other</label>
+        </fieldset>
+      </fieldset>
+      <input type="submit" name="submit">
+
+    </form>
+  </body>
+</html>
