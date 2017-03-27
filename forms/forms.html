@@ -64,7 +64,8 @@
           <input type="checkbox" name="football" id="foot">
           <input type="checkbox" name="coding" id="cod">
           <input type="checkbox" name="outing" id="out">
-          <input type="text" placeholder="Other" name="other" id="other" >
+          <input type="text" disabled placeholder="Other" name="other_text" id="other_txt" >
+          <input type="checkbox" name="other_check" id="other_chk" onclick="document.getElementById('other').disabled=!this.checked;">
 
           <label for="ten">Tennis</label>
           <label for="squ">Squash</label>
@@ -72,7 +73,7 @@
           <label for="foot">Football</label>
           <label for="cod">Coding</label>
           <label for="out">Outing</label>
-          <label for="other">Other</label>
+          <label for="other_chk">Other</label>
         </fieldset>
       </fieldset>
       <input type="submit" name="submit">
