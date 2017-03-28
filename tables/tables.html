@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>students absence</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    thead{
+      background-color: #4f5066;
+    }
+    thead th{
+      padding: 4px 10px;
+    }
+    tbody td {
+      padding: 10px ;
+    }
+    tbody th {
+      background-color:#c2eafe;
+    }
+    tbody tr:nth-child(even){
+      background-color: #baebae;
+    }
+    tfoot tr td{
+      border: none;
+      padding: 4px 0px;
+    }
+    tfoot ul{
+      list-style: none;
+    }
+
+    tfoot ul li{
+      display: inline-block;
+      padding: 0px 10px;
+      border: 1px solid green;
+    }
+    tfoot a{
+      text-decoration: none;
+      color:black;
+    }
+  </style>
+  </head>
+  <body>
+    <table border="1 px">
+      <thead>
+        <tr>
+          <th rowspan="2">Student Name</th><th rowspan="2">Student Class</th><th colspan="2">Absence</th>
+        </tr>
+        <tr>
+          <th>Sick leave</th><th>Uninformed leaves</th>
+        </tr>
+
+      </thead>
+      <tbody>
+        <tr>
+          <th>Joe</th>
+          <td>2</td>
+          <td>2</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th scope="row">Hoss</th>
+          <td>3</td>
+          <td>3</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <th scope="row">Hoda</th>
+          <td>5</td>
+          <td>5</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <th scope="row">Paki</th>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <th scope="row">Bisho</th>
+          <td>4</td>
+          <td>4</td>
+          <td>4</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">
+            <nav>
+              <ul>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">next</a></li>
+              </ul>
+            </nav>
+          </td>
+          <td colspan="1">
+            <form action="index.html" method="post">
+              <select name="no of stds." id="students no.">
+                <option>5</option>
+                <option>10</option>
+                <option>15</option>
+                <option>20</option>
+                <option>All</option>
+              </select>
+              <label for="students no.">shown no. of students</label>
+            </form>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
